@@ -588,7 +588,6 @@ function renderMemories() {
 /* =========================================================
    CREATE MEMORY CARD
    ========================================================= */
-
 function createMemoryCard(memory) {
 
   const special =
@@ -598,13 +597,11 @@ function createMemoryCard(memory) {
          </div>`
       : "";
 
-
   const media =
     createMedia(
       memory,
       "card-media"
     );
-
 
   return `
     <article
@@ -626,13 +623,20 @@ function createMemoryCard(memory) {
           ${formatDate(memory.memory_date)}
         </div>
 
+        ${
+          memory.description
+            ? `<div class="memory-description">
+                ${escapeHTML(memory.description)}
+               </div>`
+            : ""
+        }
+
       </div>
 
     </article>
   `;
 
 }
-
 
 /* =========================================================
    SPECIAL MEMORIES
