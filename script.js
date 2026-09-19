@@ -1658,12 +1658,12 @@ musicButton.addEventListener(
    OPTIONAL MUSIC
    =========================================================
 
-   Example:
+   Example:*/
 
    backgroundMusic.src =
-     "https://example.com/your-song.mp3";
+     "https://oxdqsrjyaydsddznldzj.supabase.co/storage/v1/object/public/memories/music/The%20Paper%20Kites%20Bloom%20Official%20Music%20Video.mp3";
 
-   IMPORTANT:
+  /* IMPORTANT:
 
    Do not use copyrighted songs unless you have permission
    or the appropriate rights.
